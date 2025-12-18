@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DPF Doc | Mobile DPF Cleaning – North London, Hertfordshire & Essex</title>
+  <meta name="description" content="DPF Doc provides professional mobile DPF cleaning services across North London, Hertfordshire and Essex. Same-day service, restore performance and avoid costly DPF replacement." />
+
+  <style>
+    :root{
+      --dark:#020617;
+      --primary:#0f172a;
+      --accent:#f97316;
+      --light:#f8fafc;
+      --gray:#64748b;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+    body{background:var(--light);color:var(--primary);line-height:1.6}
+
+    header{background:linear-gradient(135deg,var(--dark),var(--primary));color:#fff;padding:2.5rem 1.5rem}
+    nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center}
+    .logo{font-weight:800;font-size:1.4rem}
+    ul{list-style:none;display:flex;gap:1.5rem}
+    ul a{color:white;text-decoration:none;font-weight:500}
+
+    .hero{max-width:1100px;margin:2.5rem auto 0;text-align:center}
+    .hero h1{font-size:2.3rem;margin-bottom:1rem}
+    .hero p{color:#cbd5f5;max-width:720px;margin:auto}
+    .cta{display:inline-block;margin-top:1.5rem;background:var(--accent);color:white;padding:0.9rem 1.6rem;border-radius:10px;font-weight:700;text-decoration:none}
+
+    section{padding:3rem 1.5rem;max-width:1100px;margin:auto}
+    h2{text-align:center;font-size:1.9rem;margin-bottom:1.5rem}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
+    .card{background:white;padding:1.6rem;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,0.08)}
+
+    footer{background:var(--dark);color:#cbd5f5;text-align:center;padding:2rem}
+
+    /* Floating buttons */
+    .call-btn{display:none;position:fixed;bottom:1rem;left:1rem;right:1rem;background:var(--accent);color:white;text-align:center;padding:1rem;border-radius:14px;font-weight:800;text-decoration:none;z-index:999}
+    .wa-btn{position:fixed;bottom:5.2rem;right:1rem;background:#25D366;color:white;padding:0.9rem 1.2rem;border-radius:50px;font-weight:700;text-decoration:none;z-index:999}
+    @media(max-width:768px){.call-btn{display:block} ul{display:none}}
+
+    /* Cookie banner */
+    #cookie{position:fixed;bottom:0;width:100%;background:#0f172a;color:white;padding:1rem;text-align:center;z-index:1000}
+    #cookie button{margin-left:1rem;padding:0.4rem 1rem;border:none;border-radius:6px;background:var(--accent);color:white;font-weight:600}
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">DPF Doc</div>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#symptoms">DPF Warning Signs</a></li>
+      <li><a href="#areas">Areas</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Mobile DPF Cleaning Specialists</h1>
+    <p>Professional on-site diesel particulate filter cleaning across North London, Hertfordshire and Essex. Avoid replacement costs and get back on the road fast.</p>
+    <a class="cta" href="tel:+447448343668">Call +44 7448 343668</a>
+  </div>
+</header>
+
+<section id="pricing">
+  <h2>DPF Cleaning Prices</h2>
+  <p style="text-align:center;max-width:760px;margin:0 auto 2rem">Transparent, competitive pricing for mobile DPF cleaning across North London, Hertfordshire and Essex. As a new local business, DPF Doc offers introductory prices – no hidden fees.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>🔍 Diagnostic Scan Only</h3>
+      <p><strong>£40</strong></p>
+      <ul>
+        <li>Full fault code scan</li>
+        <li>Live DPF data check</li>
+        <li>Regeneration status</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ DPF Health Check & Forced Regen</h3>
+      <p><strong>from £80</strong></p>
+      <ul>
+        <li>Diagnostics included</li>
+        <li>Forced regeneration</li>
+        <li>Ideal for early blockages</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🧼 Full Mobile DPF Clean</h3>
+      <p><strong>from £149</strong></p>
+      <ul>
+        <li>Full diagnostics included</li>
+        <li>On-vehicle DPF cleaning</li>
+        <li>Clears warning lights & limp mode</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🚐 Vans & Heavy Blockages</h3>
+      <p><strong>from £189</strong></p>
+      <ul>
+        <li>Extended cleaning time</li>
+        <li>High-soot or ash load</li>
+        <li>Large engines & vans</li>
+      </ul>
+    </div>
+  </div>
+
+  <p style="text-align:center;margin-top:2rem;font-size:0.95rem;color:#64748b">Prices depend on vehicle type and blockage severity. No fix – no charge policy may apply. Call or WhatsApp for an exact quote.</p>
+</section>
+
+<section id="services">
+  <h2>Our DPF Cleaning Service</h2>
+  <div class="grid">
+    <div class="card">✔️ Mobile on-site DPF cleaning</div>
+    <div class="card">✔️ No DPF removal required</div>
+    <div class="card">✔️ Clears warning lights & limp mode</div>
+    <div class="card">✔️ Suitable for cars & vans</div>
+  </div>
+</section>
+
+<section id="symptoms">
+  <h2>DPF Warning Signs</h2>
+  <div class="grid">
+    <div class="card">🚨 DPF warning light</div>
+    <div class="card">⚠️ Limp mode / reduced power</div>
+    <div class="card">💨 Excessive exhaust smoke</div>
+    <div class="card">⛽ High fuel consumption</div>
+    <div class="card">🔁 Failed regeneration</div>
+    <div class="card">🧯 Engine management light</div>
+  </div>
+</section>
+
+<section id="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="grid">
+    <div class="card">⭐️⭐️⭐️⭐️⭐️<br>"Saved me from a £1,200 DPF replacement."<br><strong>North London</strong></div>
+    <div class="card">⭐️⭐️⭐️⭐️⭐️<br>"Professional, quick and honest service."<br><strong>Hertfordshire</strong></div>
+    <div class="card">⭐️⭐️⭐️⭐️⭐️<br>"DPF light gone the same day."<br><strong>Essex</strong></div>
+  </div>
+</section>
+
+<section id="areas">
+  <h2>Service Areas</h2>
+  <p style="text-align:center">North London • Hertfordshire • Essex</p>
+  <iframe loading="lazy" allowfullscreen style="width:100%;height:320px;border-radius:16px;border:none" src="https://www.google.com/maps?q=North+London+Hertfordshire+Essex&output=embed"></iframe>
+</section>
+
+<section id="contact">
+  <h2>Contact DPF Doc</h2>
+  <p style="text-align:center;max-width:700px;margin:0 auto 1.5rem">Fill in the form below and we’ll get back to you quickly. For urgent issues, call or WhatsApp us directly.</p>
+  <form onsubmit="sendWhatsApp(event)" style="max-width:600px;margin:0 auto;background:white;padding:2rem;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,0.08)">
+    <label>Name</label><br>
+    <input id="name" type="text" required style="width:100%;padding:0.7rem;margin:0.4rem 0 1rem;border-radius:8px;border:1px solid #cbd5e1"><br>
+
+    <label>Phone Number</label><br>
+    <input id="phone" type="tel" required style="width:100%;padding:0.7rem;margin:0.4rem 0 1rem;border-radius:8px;border:1px solid #cbd5e1"><br>
+
+    <label>Vehicle & Issue</label><br>
+    <textarea id="issue" required rows="4" style="width:100%;padding:0.7rem;margin:0.4rem 0 1.5rem;border-radius:8px;border:1px solid #cbd5e1"></textarea>
+
+    <button type="submit" style="width:100%;padding:0.9rem;border:none;border-radius:10px;background:#f97316;color:white;font-weight:800;font-size:1rem">Send via WhatsApp</button>
+    <p style="text-align:center;margin-top:1rem;font-size:0.9rem">Or email us directly: <a href="mailto:karp24111988@gmail.com">karp24111988@gmail.com</a></p>
+  </form>
+  <script>
+    function sendWhatsApp(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value;
+      const phone=document.getElementById('phone').value;
+      const issue=document.getElementById('issue').value;
+      const msg=`New DPF enquiry:%0AName: ${name}%0APhone: ${phone}%0AIssue: ${issue}`;
+      window.open(`https://wa.me/447448343668?text=${msg}`,'_blank');
+    }
+  </script>
+</section>
+
+<footer>
+  <p>© 2025 DPF Doc · Mobile DPF Cleaning</p>
+  <p>Phone & WhatsApp: <a style="color:var(--accent)" href="tel:+447448343668">+44 7448 343668</a></p>
+</footer>
+
+<a class="call-btn" href="tel:+447448343668">📞 Call DPF Doc</a>
+<a class="wa-btn" href="https://wa.me/447448343668">💬 WhatsApp</a>
+
+<div id="cookie">
+  This website uses cookies to improve your experience.
+  <button onclick="document.getElementById('cookie').style.display='none'">Accept</button>
+</div>
+
+</body>
+</html>
