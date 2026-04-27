@@ -10,7 +10,7 @@
   --dark:#020617;
   --primary:#0f172a;
   --accent:#f97316;
-  --green:#22c55e;
+  --green:#25D366;
   --light:#f8fafc;
 }
 *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
@@ -21,7 +21,7 @@ header{
   color:white;
 }
 
-/* NAVBAR */
+/* NAV */
 nav{
   max-width:1100px;
   margin:auto;
@@ -32,33 +32,30 @@ nav{
   flex-wrap:wrap;
 }
 
+/* 🔥 BIGGER LOGO (SMART SCALING) */
 .logo img{
-  height:90px;
+  height:110px;
+  max-width:100%;
+  object-fit:contain;
 }
 
-.phone{
-  font-size:1.2rem;
+/* CONTACT HEADER */
+.contact-top{
+  text-align:right;
   font-weight:700;
 }
-.phone a{
+.contact-top a{
   color:white;
   text-decoration:none;
+  display:block;
 }
 
 /* HERO */
 .hero{
   max-width:1100px;
   margin:auto;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:2rem;
   padding:2rem 1rem;
-  flex-wrap:wrap;
-}
-
-.hero-text{
-  flex:1;
+  text-align:center;
 }
 
 .hero h1{
@@ -68,43 +65,45 @@ nav{
 
 .hero p{
   color:#cbd5f5;
-  margin-bottom:1rem;
+  margin-bottom:1.5rem;
 }
 
-.hero-buttons{
+/* BUTTONS */
+.buttons{
   display:flex;
+  justify-content:center;
   gap:1rem;
   flex-wrap:wrap;
 }
 
 .btn{
-  padding:1rem 1.5rem;
-  border-radius:10px;
+  padding:1.1rem 1.6rem;
+  border-radius:12px;
   text-decoration:none;
-  font-weight:700;
-  display:inline-block;
+  font-weight:800;
+  font-size:1.1rem;
 }
 
-.btn-call{background:var(--accent);color:white;}
-.btn-wa{background:var(--green);color:white;}
+/* 🔥 WHATSAPP MAIN */
+.btn-wa{
+  background:var(--green);
+  color:white;
+  font-size:1.2rem;
+}
 
-.badges{
-  display:flex;
-  gap:1.5rem;
-  margin-top:1.5rem;
-  flex-wrap:wrap;
-  color:#cbd5f5;
+/* SECONDARY */
+.btn-call{
+  background:var(--accent);
+  color:white;
 }
 
 /* SECTIONS */
 section{padding:3rem 1rem;max-width:1100px;margin:auto}
-
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:1.5rem;
 }
-
 .card{
   background:white;
   padding:1.5rem;
@@ -129,24 +128,24 @@ footer{
 /* MOBILE */
 .call-btn{
   display:none;
+}
+
+.wa-btn{
   position:fixed;
   bottom:1rem;
-  left:1rem;
   right:1rem;
-  background:var(--accent);
+  background:#25D366;
   color:white;
-  text-align:center;
-  padding:1rem;
-  border-radius:12px;
+  padding:1rem 1.4rem;
+  border-radius:50px;
   font-weight:800;
   text-decoration:none;
+  z-index:999;
 }
 
 @media(max-width:768px){
-  .hero{flex-direction:column;text-align:center}
-  .logo img{height:65px}
-  .phone{width:100%;text-align:center;margin-top:0.5rem}
-  .call-btn{display:block}
+  .logo img{height:85px;}
+  .contact-top{text-align:center;width:100%;margin-top:0.5rem;}
 }
 </style>
 </head>
@@ -157,35 +156,31 @@ footer{
 
 <nav>
 <div class="logo">
-<img src="logo.png" alt="DPF Doc">
+<img src="logo.png" alt="DPF Doc Logo">
 </div>
 
-<div class="phone">
+<div class="contact-top">
 📞 <a href="tel:+447448343668">+44 7448 343668</a>
+💬 <a href="https://wa.me/447448343668">WhatsApp Us</a>
 </div>
 </nav>
 
 <div class="hero">
-<div class="hero-text">
-
 <h1>MOBILE DPF CLEANING SPECIALISTS</h1>
 
 <p>DPF warning light on? We come to you the same day.  
 Serving North London, Hertfordshire & Essex.</p>
 
-<div class="hero-buttons">
-<a class="btn btn-call" href="tel:+447448343668">📞 Call Now</a>
-<a class="btn btn-wa" href="https://wa.me/447448343668">💬 WhatsApp</a>
+<div class="buttons">
+<a class="btn btn-wa" href="https://wa.me/447448343668">
+💬 WhatsApp Now (Fastest Response)
+</a>
+
+<a class="btn btn-call" href="tel:+447448343668">
+📞 Call Instead
+</a>
 </div>
 
-<div class="badges">
-<span>✔ Same-day service</span>
-<span>✔ Mobile service</span>
-<span>✔ No fix – no fee</span>
-<span>✔ Competitive pricing</span>
-</div>
-
-</div>
 </div>
 
 </header>
@@ -194,42 +189,25 @@ Serving North London, Hertfordshire & Essex.</p>
 <h2 style="text-align:center;margin-bottom:2rem">DPF Cleaning Prices</h2>
 
 <div class="grid">
-
 <div class="card">
 <h3>Diagnostic</h3>
 <div class="price">£40</div>
-<p>Full fault code scan & DPF data</p>
 </div>
 
 <div class="card">
 <h3>Forced Regen</h3>
 <div class="price">from £80</div>
-<p>Ideal for early blockages</p>
 </div>
 
 <div class="card">
 <h3>Full DPF Clean</h3>
 <div class="price">from £149</div>
-<p>Complete on-vehicle cleaning</p>
 </div>
 
 <div class="card">
 <h3>Vans & Heavy</h3>
 <div class="price">from £189</div>
-<p>For severe blockages</p>
 </div>
-
-</div>
-</section>
-
-<section>
-<h2 style="text-align:center;margin-bottom:2rem">Why Choose Us</h2>
-
-<div class="grid">
-<div class="card">✔ Experienced DPF specialists</div>
-<div class="card">✔ No removal required</div>
-<div class="card">✔ Better performance</div>
-<div class="card">✔ 100% satisfaction focus</div>
 </div>
 </section>
 
@@ -238,7 +216,10 @@ Serving North London, Hertfordshire & Essex.</p>
 <p>📞 +44 7448 343668</p>
 </footer>
 
-<a class="call-btn" href="tel:+447448343668">📞 Call DPF Doc</a>
+<!-- 🔥 FLOATING WHATSAPP -->
+<a class="wa-btn" href="https://wa.me/447448343668">
+💬 WhatsApp
+</a>
 
 </body>
 </html>
