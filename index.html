@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DPF Doc | Mobile DPF Cleaning</title>
 
 <style>
@@ -10,57 +10,121 @@
   --dark:#020617;
   --primary:#0f172a;
   --accent:#f97316;
+  --green:#22c55e;
   --light:#f8fafc;
 }
 *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
 body{background:var(--light);color:var(--primary)}
 
-header{background:linear-gradient(135deg,var(--dark),var(--primary));color:#fff;padding:1.5rem 1rem}
-nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-
-/* LOGO BIGGER */
-.logo img{
-  height:85px;
+header{
+  background:linear-gradient(135deg,#020617,#0f172a);
+  color:white;
 }
 
-/* PHONE IN HEADER */
+/* NAVBAR */
+nav{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem;
+  flex-wrap:wrap;
+}
+
+.logo img{
+  height:90px;
+}
+
 .phone{
+  font-size:1.2rem;
   font-weight:700;
-  font-size:1.1rem;
 }
 .phone a{
-  color:#fff;
+  color:white;
   text-decoration:none;
 }
 
-/* NAV */
-ul{list-style:none;display:flex;gap:1.2rem}
-ul a{color:white;text-decoration:none;font-weight:500}
-
 /* HERO */
-.hero{text-align:center;margin-top:2rem}
-.hero h1{font-size:2rem;margin-bottom:1rem}
-.hero p{color:#cbd5f5;max-width:700px;margin:auto}
+.hero{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:2rem;
+  padding:2rem 1rem;
+  flex-wrap:wrap;
+}
 
-/* BUTTONS */
-.cta{
-  display:inline-block;
-  margin-top:1rem;
-  background:var(--accent);
-  color:white;
+.hero-text{
+  flex:1;
+}
+
+.hero h1{
+  font-size:2.5rem;
+  margin-bottom:1rem;
+}
+
+.hero p{
+  color:#cbd5f5;
+  margin-bottom:1rem;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+
+.btn{
   padding:1rem 1.5rem;
   border-radius:10px;
-  font-weight:700;
   text-decoration:none;
-  font-size:1.05rem;
+  font-weight:700;
+  display:inline-block;
+}
+
+.btn-call{background:var(--accent);color:white;}
+.btn-wa{background:var(--green);color:white;}
+
+.badges{
+  display:flex;
+  gap:1.5rem;
+  margin-top:1.5rem;
+  flex-wrap:wrap;
+  color:#cbd5f5;
 }
 
 /* SECTIONS */
-section{padding:2.5rem 1rem;max-width:1100px;margin:auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
-.card{background:white;padding:1.5rem;border-radius:14px;box-shadow:0 10px 25px rgba(0,0,0,0.08)}
+section{padding:3rem 1rem;max-width:1100px;margin:auto}
 
-footer{background:var(--dark);color:#cbd5f5;text-align:center;padding:2rem}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:1.5rem;
+}
+
+.card{
+  background:white;
+  padding:1.5rem;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.price{
+  font-size:1.8rem;
+  font-weight:800;
+  margin:0.5rem 0;
+}
+
+/* FOOTER */
+footer{
+  background:var(--dark);
+  color:#cbd5f5;
+  text-align:center;
+  padding:2rem;
+}
 
 /* MOBILE */
 .call-btn{
@@ -77,11 +141,12 @@ footer{background:var(--dark);color:#cbd5f5;text-align:center;padding:2rem}
   font-weight:800;
   text-decoration:none;
 }
+
 @media(max-width:768px){
-  ul{display:none}
+  .hero{flex-direction:column;text-align:center}
+  .logo img{height:65px}
+  .phone{width:100%;text-align:center;margin-top:0.5rem}
   .call-btn{display:block}
-  .logo img{height:65px;}
-  .phone{width:100%;text-align:center;margin-top:0.5rem;}
 }
 </style>
 </head>
@@ -89,88 +154,83 @@ footer{background:var(--dark);color:#cbd5f5;text-align:center;padding:2rem}
 <body>
 
 <header>
+
 <nav>
-
-<!-- LOGO -->
 <div class="logo">
-  <img src="logo.png" alt="DPF Doc Logo">
+<img src="logo.png" alt="DPF Doc">
 </div>
 
-<!-- PHONE NUMBER -->
 <div class="phone">
-  📞 <a href="tel:+447448343668">+44 7448 343668</a>
+📞 <a href="tel:+447448343668">+44 7448 343668</a>
 </div>
-
-<ul>
-<li><a href="#services">Services</a></li>
-<li><a href="#pricing">Pricing</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
 </nav>
 
 <div class="hero">
-<h1>Mobile DPF Cleaning Specialists</h1>
-<p>DPF warning light on? Same-day mobile service across North London, Hertfordshire & Essex.</p>
+<div class="hero-text">
 
-<a class="cta" href="tel:+447448343668">📞 Call Now</a>
-<br>
-<a class="cta" href="https://wa.me/447448343668">💬 WhatsApp</a>
+<h1>MOBILE DPF CLEANING SPECIALISTS</h1>
+
+<p>DPF warning light on? We come to you the same day.  
+Serving North London, Hertfordshire & Essex.</p>
+
+<div class="hero-buttons">
+<a class="btn btn-call" href="tel:+447448343668">📞 Call Now</a>
+<a class="btn btn-wa" href="https://wa.me/447448343668">💬 WhatsApp</a>
 </div>
+
+<div class="badges">
+<span>✔ Same-day service</span>
+<span>✔ Mobile service</span>
+<span>✔ No fix – no fee</span>
+<span>✔ Competitive pricing</span>
+</div>
+
+</div>
+</div>
+
 </header>
 
-<section id="pricing">
-<h2 style="text-align:center;margin-bottom:1.5rem">Pricing</h2>
+<section>
+<h2 style="text-align:center;margin-bottom:2rem">DPF Cleaning Prices</h2>
 
 <div class="grid">
+
 <div class="card">
 <h3>Diagnostic</h3>
-<p><strong>£40</strong></p>
+<div class="price">£40</div>
+<p>Full fault code scan & DPF data</p>
 </div>
 
 <div class="card">
 <h3>Forced Regen</h3>
-<p><strong>from £80</strong></p>
+<div class="price">from £80</div>
+<p>Ideal for early blockages</p>
 </div>
 
 <div class="card">
 <h3>Full DPF Clean</h3>
-<p><strong>from £149</strong></p>
+<div class="price">from £149</div>
+<p>Complete on-vehicle cleaning</p>
 </div>
 
 <div class="card">
-<h3>Vans / Heavy</h3>
-<p><strong>from £189</strong></p>
+<h3>Vans & Heavy</h3>
+<div class="price">from £189</div>
+<p>For severe blockages</p>
 </div>
+
 </div>
 </section>
 
-<section id="services">
-<h2 style="text-align:center;margin-bottom:1.5rem">Services</h2>
+<section>
+<h2 style="text-align:center;margin-bottom:2rem">Why Choose Us</h2>
 
 <div class="grid">
-<div class="card">✔ Mobile DPF cleaning</div>
+<div class="card">✔ Experienced DPF specialists</div>
 <div class="card">✔ No removal required</div>
-<div class="card">✔ Clears warning lights</div>
-<div class="card">✔ Cars & vans</div>
+<div class="card">✔ Better performance</div>
+<div class="card">✔ 100% satisfaction focus</div>
 </div>
-</section>
-
-<section id="contact">
-<h2 style="text-align:center;margin-bottom:1.5rem">Contact</h2>
-
-<p style="text-align:center;margin-bottom:1rem">
-Call or WhatsApp for fast service
-</p>
-
-<div style="text-align:center">
-<a class="cta" href="tel:+447448343668">📞 Call</a>
-<a class="cta" href="https://wa.me/447448343668">💬 WhatsApp</a>
-</div>
-
-<p style="text-align:center;margin-top:1rem">
-Email: info@dpfdoc.co.uk
-</p>
 </section>
 
 <footer>
